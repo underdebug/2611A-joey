@@ -1,2 +1,8 @@
+# Ignore all build directories everywhere
 build/
+
+# Ignore all Python cache directories everywhere
 __pycache__/
+
+# Ignore .bin files in mem/data anywhere
+**/mem/data/*.bin
