@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Vulkan Triangle",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/VulkanTriangle",
+      "cwd": "${workspaceFolder}",
+      "args": [],
+      "MIMode": "gdb",
+      "environment": [
+        { "name": "QSG_INFO", "value": "1" },
+        { "name": "QT_QPA_PLATFORM", "value": "xcb" }
+      ],
+      "externalConsole": false
+    }
+  ]
+}
