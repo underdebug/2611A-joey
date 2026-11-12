@@ -1,0 +1,23 @@
+
+{
+    "cppdbg": {
+        "includeDirs": [
+            "/usr/include/jsoncpp",
+            "/usr/include/eigen3",
+            "lib/glad/include"
+        ],
+        "libraryDirs": [],
+        "libraries": [],
+        "linkArgs": []
+    },
+    "cuda-gdb": {
+        "includeDirs": [
+            "/usr/include/jsoncpp",
+            "/usr/include/eigen3",
+            "lib/glad/include"
+        ],
+        "libraryDirs": [],
+        "libraries": [],
+        "linkArgs": []
+    }
+}

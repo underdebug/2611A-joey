@@ -1,0 +1,116 @@
+{
+  "name": "mem",
+  "displayName": "mem",
+  "description": "mingjie2026@gmail.com",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mem",
+        "title": "mem"
+      },
+      {
+        "command": "cuda-gdb",
+        "title": "cuda-gdb"
+      },
+      {
+        "command": "cppdbg",
+        "title": "cppdbg"
+      },
+      {
+        "command": "stop",
+        "title": "stop"
+      },
+      {
+        "command": "toggleBreakpoint",
+        "title": "toggleBreakpoint"
+      },
+      {
+        "command": "stepOver",
+        "title": "stepOver"
+      },
+      {
+        "command": "install",
+        "title": "install"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+f2",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f2",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "shift+f2",
+        "command": "bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+f2",
+        "command": "bookmarks.clear"
+      },
+      {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack"
+      },
+      {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward"
+      },
+      {
+        "key": "f4",
+        "command": "cuda-gdb",
+        "when": "(filesExplorerFocus || editorTextFocus) && !inDebugMode"
+      },
+      {
+        "key": "f6",
+        "command": "cppdbg",
+        "when": "(filesExplorerFocus || editorTextFocus) && !inDebugMode"
+      },
+      {
+        "key": "shift+f5",
+        "command": "stop"
+      },
+      {
+        "key": "shift+f6",
+        "command": "stop"
+      },
+      {
+        "key": "f8",
+        "command": "mem",
+        "when": "editorTextFocus && (inDebugMode || editorLangId == python)"
+      },
+      {
+        "key": "f9",
+        "command": "toggleBreakpoint"
+      },
+      {
+        "key": "f10",
+        "command": "stepOver",
+        "when": "debugState == stopped"
+      },
+      {
+        "key": "ctrl+alt+b",
+        "command": "cmake.build",
+        "when": "cmake:enableFullFeatureSet"
+      },
+      {
+        "key": "ctrl+alt+p",
+        "command": "install"
+      }
+    ]
+  }
+}
